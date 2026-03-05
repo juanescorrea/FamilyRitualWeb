@@ -1,0 +1,362 @@
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fefefe;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background: url('images/hero-background.png') center center / cover no-repeat;
+    padding: 100px 0 60px 0;
+    border-radius: 0 0 50px 50px; /* Bordes redondeados inferiores */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.hero-subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.download-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.download-badges a {
+    display: block;
+    line-height: 0;
+}
+
+.download-badges img {
+    height: 64px;
+    width: auto;
+}
+
+.hero-tagline {
+    font-size: 14px;
+    color: #888;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Animación sutil para Agugu */
+.agugu-floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- SOCIAL PROOF SECTION --- */
+.social-proof-section {
+    background-color: #fff;
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.social-proof-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-proof-tagline {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    margin: 0;
+}
+
+.stars {
+    color: #ffca28; /* Amarillo dorado */
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.divider {
+    color: #ddd;
+    margin: 0 30px;
+    font-size: 24px;
+}
+
+.download-icon {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* --- FEATURES SECTION --- */
+.features-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 60px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.feature-blue {
+    background-color: #e3f2fd; /* Azul muy pálido */
+}
+
+.feature-pink {
+    background-color: #fce4ec; /* Rosa muy pálido */
+}
+
+.feature-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.feature-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.feature-content p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #555;
+}
+
+.feature-mockup {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-mockup img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* --- TESTIMONIALS SECTION --- */
+.testimonials-section {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.section-description {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f4f4f4; /* Gris muy claro */
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-text {
+    flex: 1;
+}
+
+.quote {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.author {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.racha {
+    font-size: 14px;
+    color: #888;
+}
+
+.final-cta {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.final-download {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-download a {
+    display: block;
+    line-height: 0;
+}
+
+.final-download img {
+    height: 44px;
+    width: auto;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main-footer a[aria-label] {
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.main-footer a[aria-label]:hover {
+    opacity: 0.85;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #888;
+}
+
+.copyright a {
+    color: #555;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* --- RESPONSIVE DESIGN (Móvil) --- */
+@media (max-width: 768px) {
+    .hero-container, .feature-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .hero-text, .feature-content, .hero-image, .feature-mockup {
+        max-width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-text h1 { font-size: 48px; }
+    .hero-subtitle { font-size: 22px; }
+    
+    .feature-content h2 { font-size: 32px; }
+    .feature-content p { font-size: 18px; }
+
+    .feature-mockup img { max-width: 400px; }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
