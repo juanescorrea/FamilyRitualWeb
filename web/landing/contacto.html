@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact - Family Ritual</title>
+    
+    <meta name="description" content="Get in touch with the Family Ritual team. We're happy to answer your questions, comments, or suggestions to improve your family's routine experience.">
+    <meta name="keywords" content="Family Ritual contact, support, customer service">
+    <meta property="og:title" content="Contact - Family Ritual">
+    <meta property="og:description" content="Get in touch with the Family Ritual team. We're happy to help with your questions and feedback.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* --- RESET BÁSICO Y FUENTES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #fefefe;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero uses style.css - override for centered layout like privacy/terms */
+        .contact-page .hero-section {
+            padding: 60px 0;
+        }
+
+        .contact-page .hero-container {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contact-page .hero-text {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-page .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .contact-page .hero-subtitle {
+            font-size: 20px;
+        }
+
+        /* --- SECTION CONTACTO (Diseño de Tarjeta) --- */
+        .contact-section {
+            padding: 80px 0;
+            background-color: #f9f9f9; /* Gris muy pálido */
+            border-radius: 50px; /* Bordes redondeados */
+            margin-top: -30px; /* Para 'enganchar' con la cabecera */
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        /* Bloque de Texto y Formulario (Tarjeta Blanca) */
+        .contact-text-block {
+            flex: 1;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave */
+        }
+
+        .contact-text-block h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .contact-text-block p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* Estilos del Formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical; /* Permite redimensionar solo verticalmente */
+        }
+
+        input[type="submit"] {
+            background-color: #ffca28; /* Amarillo dorado */
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e6b800; /* Amarillo más oscuro al pasar el ratón */
+        }
+
+        /* Bloque de Imagen (Agugu) */
+        .contact-image-block {
+            width: 250px;
+            text-align: center;
+        }
+
+        .contact-image-block img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+        }
+
+        /* Animación de flotado para Agugu */
+        .agugu-floating {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Footer uses style.css - contact-info link color override */
+        .contact-text-block a {
+            color: #0C97F4;
+        }
+
+        .contact-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- RESPONSIVE DESIGN (Móvil) --- */
+        @media (max-width: 768px) {
+            .contact-page .hero-text h1 { font-size: 36px; }
+            .contact-page .hero-subtitle { font-size: 18px; }
+
+            .contact-container {
+                flex-direction: column-reverse; /* Imagen arriba en móvil */
+                align-items: center;
+                gap: 30px;
+            }
+
+            .contact-text-block {
+                padding: 30px;
+            }
+
+            .contact-text-block h1 { font-size: 28px; }
+
+            .contact-image-block {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body class="contact-page">
+
+    <header class="hero-section" style="padding: 60px 0;">
+        <div class="container hero-container" style="justify-content: center; text-align: center;">
+            <div class="hero-text" style="max-width: 800px; margin: 0 auto;">
+                <h1 style="font-size: 48px;">Family Ritual</h1>
+                <p class="hero-subtitle" style="font-size: 20px;">Let's build calmer routines together.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container contact-container">
+            
+            <div class="contact-text-block">
+                <h1>Contact</h1>
+                <p>If you have any questions or comments, feel free to get in touch. We're happy to help.</p>
+                
+                <p class="contact-info">You can email us at: <a href="mailto:support@familyritual.app">support@familyritual.app</a></p>
+                
+                <p>Or fill out the form below:</p>
+                
+                <form action="#" method="post">
+                    <label for="nombre">Name:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Your full name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                    
+                    <label for="mensaje">Message:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Write your message here..." required></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            
+            <div class="contact-image-block">
+                <img src="images/agugu-contacto.png" alt="Agugu helps you" class="agugu-floating">
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <a href="index.html" aria-label="Family Ritual - Home"><img src="images/agugu-logo.png" alt="Family Ritual Logo" class="footer-logo"></a>
+            <p class="copyright">© 2026 Family Ritual. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
