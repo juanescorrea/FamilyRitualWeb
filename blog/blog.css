@@ -1,0 +1,222 @@
+/* ============================================
+   BLOG NAV
+   ============================================ */
+.blog-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.blog-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog-nav img {
+    height: 40px;
+    width: auto;
+}
+.blog-nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0077cc;
+    text-decoration: none;
+}
+.blog-nav-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   ARTICLE LAYOUT
+   ============================================ */
+.blog-article {
+    padding: 60px 0 80px;
+}
+.blog-container {
+    max-width: 780px;
+}
+.article-header {
+    margin-bottom: 48px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 32px;
+}
+.article-category {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0077cc;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+.article-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.article-meta {
+    font-size: 14px;
+    color: #888;
+}
+
+/* ============================================
+   ARTICLE BODY
+   ============================================ */
+.article-body {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+.article-body h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 48px 0 16px;
+}
+.article-body h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 32px 0 12px;
+}
+.article-body p {
+    margin-bottom: 24px;
+}
+.article-body ul,
+.article-body ol {
+    margin: 0 0 24px 24px;
+}
+.article-body li {
+    margin-bottom: 8px;
+}
+.article-body a {
+    color: #0077cc;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.article-body a:hover {
+    color: #005fa3;
+}
+.article-body blockquote {
+    border-left: 4px solid #0077cc;
+    background: #f0f7ff;
+    padding: 20px 24px;
+    border-radius: 0 8px 8px 0;
+    margin: 32px 0;
+    font-style: italic;
+    color: #444;
+}
+.article-body strong {
+    color: #1a1a1a;
+}
+
+/* ============================================
+   ARTICLE CTA
+   ============================================ */
+.article-cta {
+    margin-top: 64px;
+    padding: 48px 40px;
+    background: linear-gradient(135deg, #e3f2fd 0%, #fce4ec 100%);
+    border-radius: 24px;
+    text-align: center;
+}
+.article-cta h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+.article-cta p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+/* ============================================
+   BLOG INDEX PAGE
+   ============================================ */
+.blog-index {
+    padding: 60px 0 80px;
+}
+.blog-index h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+.blog-index-subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 48px;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+.blog-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+}
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.blog-card-category {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0077cc;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+.blog-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+.blog-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+.blog-card-meta {
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .article-header h1 {
+        font-size: 28px;
+    }
+    .article-body {
+        font-size: 17px;
+    }
+    .article-body h2 {
+        font-size: 22px;
+    }
+    .article-cta {
+        padding: 32px 24px;
+    }
+    .blog-index h1 {
+        font-size: 32px;
+    }
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
