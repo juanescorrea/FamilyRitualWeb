@@ -23,7 +23,7 @@ body {
    HERO SECTION
    ============================================ */
 .hero-section {
-    background: url('images/hero-background.png') center center / cover no-repeat;
+    background: url('images/hero-background.webp') center center / cover no-repeat;
     padding: 100px 0 60px 0;
     border-radius: 0 0 50px 50px;
     position: relative;

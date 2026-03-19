@@ -1,0 +1,14 @@
+# _config.yml
+# Usado por GitHub Pages si se ejecuta Jekyll.
+# Activa compresión para reducir el tamaño de HTML/CSS y assets.
+
+plugins:
+  - jekyll-compress-images
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+
