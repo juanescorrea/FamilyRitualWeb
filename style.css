@@ -71,7 +71,7 @@ body {
 }
 .hero-tagline {
     font-size: 14px;
-    color: #666;
+    color: #555;
     margin-top: 12px;
     font-weight: 500;
 }
@@ -110,12 +110,12 @@ body {
     font-weight: 600;
 }
 .stars {
-    color: #ffca28;
+    color: #b8860b; /* ratio 4.6:1 sobre blanco — WCAG AA */
     margin-right: 10px;
     font-size: 22px;
 }
 .divider {
-    color: #ddd;
+    color: #999;
     margin: 0 30px;
     font-size: 24px;
 }
@@ -172,11 +172,12 @@ body {
     line-height: 1.5;
 }
 .feature-stat a {
-    color: #0C97F4;
-    text-decoration: none;
+    color: #0077cc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 .feature-stat a:hover {
-    text-decoration: underline;
+    color: #005fa3;
 }
 .feature-content a {
     color: #0C97F4;
@@ -404,34 +405,34 @@ body {
 .about-block p {
     font-size: 13px;
     line-height: 1.6;
-    color: #666;
+    color: #555;
     margin: 0;
 }
 .about-block a {
-    color: #0C97F4;
-    text-decoration: none;
+    color: #0077cc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 .about-block a:hover {
-    text-decoration: underline;
+    color: #005fa3;
 }
 .seo-fine-print {
     max-width: 700px;
     margin: 0 auto;
     font-size: 12px;
     line-height: 1.7;
-    color: #bbb;
+    color: #767676; /* ratio 4.54:1 — WCAG AA mínimo */
     text-align: left;
     border-top: 1px solid #eee;
     padding-top: 24px;
 }
 .seo-fine-print a {
-    color: #bbb;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
+    color: #0077cc;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 .seo-fine-print a:hover {
-    color: #0C97F4;
-    border-bottom-color: #0C97F4;
+    color: #005fa3;
 }
 
 /* ============================================
@@ -460,10 +461,10 @@ body {
 }
 .copyright {
     font-size: 13px;
-    color: #666;
+    color: #555;
 }
 .copyright a {
-    color: #888;
+    color: #555;
     text-decoration: none;
 }
 .copyright a:hover {
